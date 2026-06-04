@@ -1,0 +1,22 @@
+{
+  "collections": [
+    {
+      "name": "travel_knowledge_chunks",
+      "vector_size": 768,
+      "distance": "Cosine",
+      "payload_indexes": ["destination", "country", "city", "topic", "source_type", "trust_score"]
+    },
+    {
+      "name": "user_semantic_memories",
+      "vector_size": 768,
+      "distance": "Cosine",
+      "payload_indexes": ["user_id", "memory_id", "memory_type", "confidence", "sensitivity"]
+    },
+    {
+      "name": "itinerary_embeddings",
+      "vector_size": 768,
+      "distance": "Cosine",
+      "payload_indexes": ["user_id", "itinerary_id", "destination", "rating"]
+    }
+  ]
+}
